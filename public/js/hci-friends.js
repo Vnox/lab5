@@ -10,6 +10,13 @@ $(document).ready(function() {
  */
 function initializePage() {
 	console.log("Javascript connected!");
+	$(".namebutton").click(nameClick);
+}
+
+function nameClick(e) {
+	e.preventDefault();
+	$(this).text("I'm clicked and I dont want to change my name.");
+
 }
 
 function anagrammedName(name) {
